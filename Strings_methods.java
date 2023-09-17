@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Strings_methods {
     public static void main(String[] args) {
         // declaration of string using string literal
@@ -33,18 +35,21 @@ public class Strings_methods {
         // == operators simply compares location of the strings, hence will not give the desired output
         // System.out.println(str == s);
 
+        String a = "Hello World";
+        String b = "hello Gojo";
+        System.out.println((a == b ) + "\n" + (a.equals(b)) + "\n" + (a.concat(b)) + "\n" + (a.equalsIgnoreCase(b)) + "\n" + Arrays.toString(a.split("")) + "\n" + a.hashCode() +"\n" + a.substring(2) + "\n" + a.indexOf("J") + "\n" + a.toUpperCase() + "\n" + a.toLowerCase());
 
         // Reversing a string 
-        StringBuilder   sb = new StringBuilder("Gojo Saturo");
-        for(int i=0;i<sb.length()/2; i++){
+        // StringBuilder   sb = new StringBuilder("Gojo Saturo");
+        // for(int i=0;i<sb.length()/2; i++){
 
-            char front = sb.charAt(i);
-            char back = sb.charAt(sb.length()-i-1);
+        //     char front = sb.charAt(i);
+        //     char back = sb.charAt(sb.length()-i-1);
 
-            sb.setCharAt(i, back);
-            sb.setCharAt(sb.length()-i-1, front);
-        }
-        System.out.println("Reversed string is: "+ sb);
+        //     sb.setCharAt(i, back);
+        //     sb.setCharAt(sb.length()-i-1, front);
+        // }
+        // System.out.println("Reversed string is: "+ sb);
 
     }
 }
