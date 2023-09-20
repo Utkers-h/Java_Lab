@@ -16,7 +16,7 @@ public class Strings_methods {
         System.out.println(name.toLowerCase());
         // BUT this doesn't change the original string , since string are immutable 
         System.out.println(name);
-        // But if we explicitly assign it to the reference variable, it will refer to the original object.   
+        // But if we explicitly assign it to the reference variable, it will refer to the new object.   
         name = name.concat(" Saturo");
         System.out.println(name);
 
@@ -37,7 +37,7 @@ public class Strings_methods {
 
         String a = "Hello World";
         String b = "hello Gojo";
-        System.out.println((a == b ) + "\n" + (a.equals(b)) + "\n" + (a.concat(b)) + "\n" + (a.equalsIgnoreCase(b)) + "\n" + Arrays.toString(a.split("")) + "\n" + a.hashCode() +"\n" + a.substring(2) + "\n" + a.indexOf("J") + "\n" + a.toUpperCase() + "\n" + a.toLowerCase());
+        // System.out.println((a == b ) + "\n" + (a.equals(b)) + "\n" + (a.concat(b)) + "\n" + (a.equalsIgnoreCase(b)) + "\n" + Arrays.toString(a.split("")) + "\n" + a.hashCode() +"\n" + a.substring(2) + "\n" + a.indexOf("J") + "\n" + a.toUpperCase() + "\n" + a.toLowerCase());
 
         // Reversing a string 
         // StringBuilder   sb = new StringBuilder("Gojo Saturo");
@@ -50,6 +50,20 @@ public class Strings_methods {
         //     sb.setCharAt(sb.length()-i-1, front);
         // }
         // System.out.println("Reversed string is: "+ sb);
+
+
+        // location
+        String s1 ="hello";
+        String s2 ="hello";
+
+        String s3 = new String("hello");
+
+        // equal operator == only compares location of the strings hence wont give correct ouptut
+        // whereas equals operator first compares location of the objects , then perform character by character comparison
+        System.out.println(s1==s2);
+        System.out.println(s1.equals(s3));
+        System.out.println(s1 == s3);
+
 
     }
 }
