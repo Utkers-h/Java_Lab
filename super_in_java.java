@@ -1,8 +1,7 @@
 
 class A{
     public A(){
-        this(3);
-
+        // this(3);
         System.out.println("In default constructor of A");
     }
 
