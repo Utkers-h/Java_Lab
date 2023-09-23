@@ -28,10 +28,6 @@ class Library{
     }
 
 }
-
-
-
-
 public class Object_Composition {
     public static void main(String[] args) {
         Book b1 = new Book("Jujustu kaisen", "Gege Akutami");

@@ -59,7 +59,7 @@ public class Strings_methods {
         String s3 = new String("hello");
 
         // equal operator == only compares location of the strings hence wont give correct ouptut
-        // whereas equals operator first compares location of the objects , then perform character by character comparison
+        // whereas equals() operator first compares location of the objects , then perform character by character comparison
         System.out.println(s1==s2);
         System.out.println(s1.equals(s3));
         System.out.println(s1 == s3);
