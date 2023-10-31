@@ -1,5 +1,5 @@
 abstract class Car{
-    abstract public void drive();
+    public abstract void drive();
 
     void play_music(){
         System.out.println("Play Music");
