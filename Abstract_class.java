@@ -11,6 +11,9 @@ class Audi extends Car{
     public void drive(){
         System.out.println("It can drive");
     }
+    void Automate(){
+        System.out.println("Automatic Transmission");
+    }
 }
 
 public class Abstract_class {
@@ -20,6 +23,7 @@ public class Abstract_class {
         Car obj = new Audi();
         obj.drive();
         obj.play_music();
+        
 
     }
 }

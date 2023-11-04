@@ -1,11 +1,24 @@
 class Outer{
-    void hello(){
+    public  String name;
+
+    public void hello(){
         System.out.println("Inside Outer class");
     }
 
     class Inner{
         void inner(){
             System.out.println("Inside Inner class");
+            // A non static inner class has full access to members of the Outer class
+            System.out.println("A non static inner class has full access to members of the Outer class");
+            name="Gojo";
+            hello();
+        }
+        
+    }
+
+    static class Inner_class_nested{
+        void display(){
+            System.out.println("Displaying from Static Nested Class");
         }
     }
 }
@@ -25,5 +38,12 @@ public class Inner_class {
 
         Outer.Inner inObj = obj.new Inner();
         inObj.inner();
+        
+        
+
+        //creating object of static nested class
+        Outer.Inner_class_nested obj2 = new Outer.Inner_class_nested();
+        obj2.display();
+
     }
 }
