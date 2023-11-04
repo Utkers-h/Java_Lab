@@ -13,6 +13,7 @@ class Laptop{
         this.price= price;
     }
 
+    // Overriding equals method 
     public boolean equals(Laptop obj){
         return (this.brand.equals(obj.brand) && this.price == obj.price);
     }
