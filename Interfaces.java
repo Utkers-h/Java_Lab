@@ -29,7 +29,7 @@ public class Interfaces {
         JJk obj = new Jujustu_High();
         obj.display();
 
-        // Jujustu_High.name ="Saturo Gojo"; // The final field JJk.name cannot be assigned , hence will return an error
+        // Jujustu_High.name ="Saturo Gojo"; // The final field JJk.name cannot be reassigned , hence will return an error
         Curse curse=new Jujustu_High();
         curse.show();
     }

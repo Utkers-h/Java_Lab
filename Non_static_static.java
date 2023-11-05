@@ -9,6 +9,10 @@ public class Non_static_static {
         System.out.println("Welcome to Jujustu High");
     }
 
+    {
+        System.out.println("Hello");
+    }
+
     void display(){
         System.out.println("Name: "+name+ " Student of "+ school);
     }

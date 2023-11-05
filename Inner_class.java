@@ -19,7 +19,12 @@ class Outer{
     static class Inner_class_nested{
         void display(){
             System.out.println("Displaying from Static Nested Class");
+
+            // to access the non static methods of the Outer class in static inner class, we have to create objected of it
+            // Outer obj3 = new Outer();
+            // obj3.hello();
         }
+        
     }
 }
 

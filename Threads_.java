@@ -29,6 +29,7 @@ public class Threads_ {
 
         // for setting priority of the thread 
         obj2.setPriority(Thread.MAX_PRIORITY);
+        System.out.println(obj.getPriority());
 
         obj.start();
         obj2.start();

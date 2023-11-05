@@ -31,6 +31,6 @@ class B extends A {
 public class super_in_java {
     public static void main(String[] args) {
 
-        B obj = new B(7);
+        B obj = new B(7); 
     }
 }
