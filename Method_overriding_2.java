@@ -7,7 +7,6 @@ class Parent {
 
 class Child extends Parent {
     // Overriding the demo method with a return type that is a subtype of the return type in the Parent class
-    // @Override
     Child demo() {
         System.out.println("Child demo");
         return new Child();
@@ -20,6 +19,9 @@ public class Method_overriding_2 {
         // Creating an object of the Child class
         Child childObj = new Child();
 
+        Parent obj = new Child();
+
+        // Parent res = obj.demo();
         // Calling the overridden demo method in the Child class
         Child result = childObj.demo();
     }

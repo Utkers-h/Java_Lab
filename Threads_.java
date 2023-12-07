@@ -1,5 +1,6 @@
 class A extends Thread{
     public void run(){
+        System.out.println("Current state" + Thread.currentThread().getState());
         for(int i=0;i<30;i++){
             System.out.println("Gojo");
             try {
@@ -13,6 +14,7 @@ class A extends Thread{
 
 class B extends Thread{
     public void run(){
+        System.out.println("Current state" + Thread.currentThread().getState());
         for(int i=0;i<30;i++){
             System.out.println("Saturo");
 
@@ -22,7 +24,8 @@ class B extends Thread{
 
 
 public class Threads_ {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws
+     InterruptedException{
         
         A obj = new A();
         B obj2 = new B();
@@ -32,6 +35,7 @@ public class Threads_ {
         System.out.println(obj.getPriority());
 
         obj.start();
+        // obj2.join();
         obj2.start();
     }
 }
