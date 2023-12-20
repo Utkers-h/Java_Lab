@@ -10,7 +10,13 @@ public class Priority_queue {
         q.add(98);
         q.add(9);
 
-        System.out.println(q);
+        System.out.println("head:" + q.peek());
+        // System.out.println(q);
+        // for(int n : q){
+            //     System.out.println(n);
+            // }
+            q.remove(1);
+            System.out.println("head:" + q.peek());
 
         System.out.println(q.poll());
         System.out.println(q);

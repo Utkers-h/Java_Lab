@@ -15,6 +15,7 @@ public class Non_static_static {
 
     void display(){
         System.out.println("Name: "+name+ " Student of "+ school);
+        
     }
 
     Non_static_static(){
@@ -32,7 +33,8 @@ public class Non_static_static {
 
         Non_static_static obj3 = new Non_static_static();
 
-        obj1.display();
-        obj2.display();
+        // obj1.display();
+        // obj2.display();
+        
     }
 }

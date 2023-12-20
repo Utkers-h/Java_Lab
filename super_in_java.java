@@ -15,7 +15,7 @@ class B extends A {
     public B(){
         // By default it will call the constructor of parent class , using super 
         // But if we want to call paramterized constructor of A , then we have to specify parameter to super
-        // super(7);
+        super(7);
         System.out.println("In default constructor of B");
     }
 

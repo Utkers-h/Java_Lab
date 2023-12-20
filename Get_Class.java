@@ -14,6 +14,7 @@ public class Get_Class {
     public static void main(String[] args) {
         Parent obj = new Parent();
         System.out.println(obj instanceof Parent);
+        System.out.println(obj instanceof Child);
         System.out.println(obj.getClass());
 
         Child obj2 = new Child();

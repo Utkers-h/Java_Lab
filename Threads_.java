@@ -1,6 +1,7 @@
 class A extends Thread{
     public void run(){
         System.out.println("Current state" + Thread.currentThread().getState());
+        System.out.println("Name: " + Thread.currentThread().getName());
         for(int i=0;i<30;i++){
             System.out.println("Gojo");
             try {
@@ -33,7 +34,7 @@ public class Threads_ {
         // for setting priority of the thread 
         obj2.setPriority(Thread.MAX_PRIORITY);
         System.out.println(obj.getPriority());
-
+        
         obj.start();
         // obj2.join();
         obj2.start();

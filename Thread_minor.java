@@ -79,7 +79,7 @@ public class Thread_minor {
         obj.setPriority(Thread.MAX_PRIORITY);
         obj.start();
         obj.join();
-        obj2.join();
+        // obj2.join();
         obj2.start();
 
 

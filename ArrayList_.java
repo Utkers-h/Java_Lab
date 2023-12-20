@@ -18,7 +18,7 @@ public class ArrayList_{
 
         list.addAll(newlist);
         // System.out.println(list);
-        // list.remove(2);
+        list.remove(2);
         list.set(2, 0);
         // System.out.println(list);
 
